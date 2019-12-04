@@ -1,0 +1,357 @@
+.main-header{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background: #000;
+    font-family: cursive;
+}
+.main{
+    margin: 0;
+    padding: 0;
+    color: #111;
+    font-size: 6em;
+}
+h1 span{
+    display: table-cell;
+    margin: 0;
+    padding: 0;
+    animation: animate 2s linear infinite;
+}
+@keyframes animate {
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 30px #00b3ff,
+        0 0 50px #00b3ff,
+        0 0 70px #00b3ff,
+        0 0 90px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 150px #00b3ff,
+        0 0 190px #00b3ff,
+        0 0 230px #00b3ff,
+        0 0 280px #00b3ff,
+        0 0 300px #00b3ff,
+        0 0 320px #00b3ff;
+
+    }
+    20%,80%{
+        color: #111;
+        filter: blur(0px);
+    }
+}
+
+.matter{
+    text-align: center;
+    background-color: aliceblue;
+}
+#matter1, .tour{
+    background-color: rosybrown;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+.col-sm{
+    border: 5px solid black;
+    padding: 5px;
+    justify-content: center;
+    display: flex;
+    margin: 2px;
+}
+.cont{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    letter-spacing: 5px;
+    text-shadow: 3px 3px aqua;
+
+}
+table{
+
+    padding: 10px;
+    text-align: center;
+    border: 5px black solid;
+    border-collapse: separate;
+}
+table tr:nth-child(even){
+    background-color: cadetblue;
+    color: white;
+    font-size: large;
+}
+table tr:nth-child(odd){
+    background-color: darkgrey;
+    color: white;
+    font-size: large;
+}
+th{
+    background-color: darkslategray;
+    color: azure;
+    font-size: large;
+    padding: 10px;
+}
+
+h1{
+    background-color: cornflowerblue;
+    text-align: center;
+    border-radius: 10px;
+    color: azure;
+    padding: 15px;
+}
+figcaption{
+    background-color: orangered;
+    color: white;
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+}
+figure:hover{
+    transform: rotate3d(10,0,-30,30deg);
+    transition-duration: 1s;
+}
+footer{
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: medium;
+}
+button{
+    background-color: green;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px orangered;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.photo1:hover{
+    transform:  rotate3d(10,0,30,20deg);
+    transition-duration: 1s;
+    border: slategray 5px solid;
+    padding: 5px;
+    margin: 4px;
+    outline-color: green;
+  }
+.photo2:hover {
+    transform: rotate3d(10, 0, -40, 10deg);
+    transition-duration: 1s;
+    border: slategray 5px solid;
+    padding: 5px;
+    margin: 4px;
+    outline-color: green;
+
+}
+.media-body{
+    background-color: lightgray;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.col-sm{
+    display: block;
+}
+.spinner-grow{
+    width: 90px;
+    height: 100px;
+    justify-content: center;
+}
+#some{
+    background-color: lightpink;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+p{
+    text-align: center;
+}
+.video{
+    border: 5px solid coral;
+    outline: slategray 5px solid;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+}
+
+.contact{
+    text-align: center;
+}
+.firm{
+text-align: center;!important;
+    background-color: lightseagreen;
+    width: 300px;
+    height: 400px;
+    margin-left: 450px;
+}
+input{
+    padding: 15px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px orangered;
+
+}
+.icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-inside: 40px;
+}
+form:hover{
+    transform: translateX(20px);
+    transition-duration: 1s;
+}
+input[type=text],[type=password]:hover{
+    background-color: lightcyan;
+
+}
+
+.comment{
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    text-align: center;
+}
+.love{
+    text-align: center;
+}
+#likes{
+    width: 400px;
+    height: 50px;
+}
+#likes:hover{
+    background-color: darkolivegreen;
+    zoom: inherit;
+}
+#text-area:focus{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 8px;
+}
+body{
+    background-color: lightcyan;
+}
+
+.clock{
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    padding: 10px;
+    border-radius: 40px;
+    font-family: cursive;
+    margin-bottom: 10px;
+}
+.yee{
+    font-family: "Comic Sans MS Arial";
+    text-shadow: cornflowerblue 2px 3px;
+}
+#yup{
+    background-color: chocolate;
+    border-radius: 40px;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 400px;
+    height: 100px;
+    overflow: auto;
+    background-color: #888888;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 4px solid #888;
+
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.progress1{
+    width: 300px;
+    height: 40px;
+    background-color: lightcoral;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+.progress2{
+    width: 400px;
+    height: 40px;
+    background-color: lightblue;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+.progress3{
+    width: 650px;
+    height: 40px;
+    background-color: chocolate;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+.progress4{
+    width: 900px;
+    height: 40px;
+    background-color: cornflowerblue;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+.progress5{
+    width: 1150px;
+    height: 40px;
+    background-color: green;
+    margin-bottom: 6px;
+    padding: 10px;
+}
+.pers{
+    text-align: center;
+    text-shadow: 2px 2px chartreuse;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+p{
+    margin-top: 10px;
+}
+.container-1{
+    padding: 10px;
+}
+.simple:hover{
+    transform:translate3d(50px, -40px , 10px );
+    transition-duration: 0.5s;
+
+}
+.simple{
+    border-radius: 10%;
+    outline: 4px solid chartreuse;
+padding: 5px;
+}
+.list{
+    text-align: center;
+    text-decoration: none;!important;
+    margin: auto;
+    padding: 5pxs;
+}
