@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo website</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 10px 10% 10px;
+        }
+        .top{
+            position: relative;
+            top: 0;
+
+        }
+        ul{
+            list-style-type: none;
+            background: #333333;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 80%;
+        }
+        li {
+           float: left;
+        }
+        li a{
+             display: block;
+            color: white;
+             padding: 20px 26px;
+             text-align: center;
+             text-decoration: none;
+        }
+        li a:hover{
+            background-color: black;
+        }
+input[type=search]{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 8px;
+}
+        input[type=search]:focus{
+            background-color: #dddddd;
+        }
+        .search-button{
+            padding: 10px 26px;
+            text-align: right;
+            background-color: green;
+            color: white;
+            box-shadow: 2px 2px silver;
+            border-radius: 5px;
+        }
+        .search-button:active{
+            transform: translateY(10px);
+            transition-duration: 0.3s;
+        }
+        .header{
+            background-image: url("../img/travel1.jpg" );
+            background-size: cover;
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header>div{
+            text-align: center;
+            font-size: 25px;
+            color: lightpink;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+        .header>div>h1{
+            font-size: 55px;
+            color: gold;
+        }
+        .home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: linen;
+        }
+        .home>div{
+            text-align: center;
+        }
+        .sub{
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+            color: teal;
+            font-size: 40px;
+            background-color: lightsteelblue;
+            padding: 10px;
+            text-align: center;
+        }
+        .home-2{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background-image: linear-gradient(10turn,royalblue,#ff253a);
+        }
+        .home-2>div{
+            width: 500px;
+            padding: 10px;
+            height: auto;
+            color: white;
+        }
+        h3{
+            color: darkmagenta;
+            font-size: 25px;
+            text-shadow: 2px 2px floralwhite;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+            justify-content: center;
+            align-items: center;
+        }
+        .column{
+            flex: 25%;
+            max-width: 30%;
+            padding: 0 4px;
+        }
+        .column img{
+            margin-top: 8px;
+            vertical-align: middle;
+        }
+        @media (max-width: 600px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        .hover:hover{
+            transform: translateY(20px);
+            transition-duration: 1s;
+        }
+        .hover2:hover{
+            transform: translateX(-20px);
+            transition-duration: 1s;
+        }
+        .hover3:hover{
+            transform: scale(1.3);
+            transition-duration: 1s;
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color: white;
+        }
+        .footer>div{
+            text-align: center;
+        }
+        .cont{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont>form{
+            box-sizing: border-box;
+            text-align: center;
+        }
+        label{
+            box-sizing: border-box;
+            padding: 10px;
+            margin: 10px;
+        }
+        input{
+            width: 400px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            border-bottom: 2px inset grey;
+            box-sizing: border-box;
+        }
+        input[type=submit]{
+            background-color: green;
+            color: white;
+            width: 100px;
+            box-shadow: 10px 10px 5px #999999;
+            border-radius: 10px;
+            height: 40px;
+        }
+        input[type=submit]:active{
+            transform: translateY(5px);
+        }
+        input[type=reset]{
+            background-color: red;
+            width: 100px;
+            color: white;
+            box-shadow: 10px 10px 5px #999999;
+            border-radius: 10px;
+            height: 40px;
+        }
+        input[type=reset]:active{
+            transform: translateY(5px);
+        }
+
+    </style>
+</head>
+<body>
+<div class="top">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div style="float: right">
+            <input type="search" placeholder="search here">
+            <button class="search-button" type="button">search</button>
+            </div>
+        </ul>
+</div>
+<!---------------------------------------main header------------------------------------>
+<div class="header">
+    <div>
+<h1>Travel Is Life</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, ipsum?</p>
+        <h4>Enjoy LIfe</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam atque doloribus illo nemo quidem, repellendus.</p>
+    </div>
+</div>
+<!-------------------home matter------------------------>
+<div id="home">
+
+<h1 class="sub" style="margin-top: 10px">Home</h1>
+<div class="home">
+    <div>
+        <img src="../img/travel7.jpg" alt="gfxd" width="300px" height="260px">
+        <div><h4>travel around world</h4></div>
+    </div>
+    <div>
+        <h2>Tourism Everywhere</h2>
+        <p style="text-indent: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A architecto, autem beatae eum itaque, laboriosam magnam molestiae nobis, nostrum odit officia quam quia recusandae rem repellat temporibus vel vero voluptatem.</p>
+        <h2>Know New THings</h2>
+        <p style="text-indent: 40px">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus est, et. At commodi deserunt ducimus eligendi excepturi laboriosam magnam odit quisquam repellendus unde! Ducimus earum, numquam. Aliquam animi distinctio earum et illo libero pariatur perferendis praesentium veniam vitae? Dolore esse eum excepturi, in magni nihil odio tenetur.</p>
+    </div>
+</div>
+
+<div class="home-2">
+        <div class="col-md-4">
+            <h2>Enjoy your life</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus ea eos molestiae nulla perspiciatis possimus quam, sed suscipit tenetur?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, eos.</p>
+            <img class="imgs" src="../img/travel6.jpg" alt="rxf" width="250px" height="250px">
+            <div>
+                <h3> World trip</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sint?</p>
+        </div>
+        <div class="col-md-4">
+            <h2>world tour</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ducimus ea eos molestiae nulla perspiciatis possimus quam, sed suscipit tenetur?</p>
+            <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, dicta.</p>
+            <img class="imgs" src="../img/travel8.jpg" alt="rxf" width="250" height="250px">
+            <div>
+               <h3> Journy is life</h3>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, porro!
+             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, temporibus!</p>
+        </div>
+</div>
+</div>
+
+<!----------------------------about--------------------------------------->
+<div id="about">
+<h1 class="sub">About</h1>
+<h2>Our tours are makes you refresh</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsa rem voluptatum. Accusamus accusantium, cumque deleniti dicta dignissimos doloribus ea earum excepturi hic illo iste laboriosam maxime non obcaecati quidem ratione rerum saepe sed suscipit tenetur veritatis voluptate, voluptatem. Aliquid!</p>
+<h2>Best guidence</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam beatae inventore iusto, labore minus nobis pariatur quasi quia quis rem totam ullam voluptas. Architecto expedita natus, officia quam repellendus sed tempore. Amet assumenda dolore illo maiores nihil quasi ullam.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur id illum impedit iure libero non reiciendis repudiandae sit suscipit voluptas.</p>
+<h3>image gallery of our tourism</h3>
+<div class="row">
+    <div class="column">
+        <img class="hover" src="../img/travel9.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover2" src="../img/travel8.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover" src="../img/travel4.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover3" src="../img/travel5.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover2" src="../img/travel6.jpg" alt="bfcghvnhb " style="width: 100%">
+    </div>
+    <div class="column">
+        <img class="hover2" src="../img/travel10.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover2" src="../img/travel1.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover3" src="../img/travel5.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img  class="hover2" src="../img/travel2.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover" src="../img/travel8.jpg" alt="bfcghvnhb " style="width: 100%">
+    </div>
+    <div class="column">
+        <img class="hover" src="../img/travel10.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover2" src="../img/travel7.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover" src="../img/travel5.jpg" alt="bfcghvnhb " style="width: 100%">
+        <img class="hover3" src="../img/travel3.jpg" alt="bfcghvnhb " style="width: 100%">
+    </div>
+    <div class="nooo">
+        <h2>This is awesome....!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam architecto cum deserunt dignissimos dolorem explicabo facilis hic, in iusto laudantium, modi, non nostrum pariatur repellendus saepe temporibus veniam voluptatem voluptatibus.</p>
+        <h2>why trips are important</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis cupiditate dolorem ea earum exercitationem facilis in minima minus molestias nesciunt quasi quisquam repellendus, sit velit?</p>
+    </div>
+</div>
+
+    <!--------------------------contact------------------->
+<div id="contact">
+    <div>
+        <h1 class="sub">Contact</h1>
+    </div>
+    <div class="cont">
+        <form action="validate">
+            <label for="first-name">First name</label>
+            <input type="text" placeholder="enter first name"><br>
+            <label for="last-name">Last name</label>
+            <input type="text" placeholder="enter last name"><br>
+            <label for="mail">mail</label>
+            <input type="email" placeholder="enter your email"><br>
+            <label for="password">Password</label>
+            <input type="password" placeholder="enter password"><br>
+            <input type="submit" placeholder="login">
+            <input type="reset" placeholder="Reset">
+        </form>
+    </div>
+</div>
+
+<!----------------------------footer-------------------------------->
+    <div class="footer">
+        <div>
+            <h5>This copy &copy; rights belongs to Rk Group since 2025 </h5>
+            <h5>for more visit us in <a href="www.google.com">google</a></h5>
+        </div>
+    </div>
+</body>
+</html>
